@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Joy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="card text-center shadow-lg p-4" style="width: 90%; max-width: 600px;">
+            <div class="card-body">
+                <h5 class="card-title">Merry Christmas!</h5>
+                <div class="d-flex flex-column align-items-center">
+                    <button id="playPauseButton" class="btn btn-primary btn-lg mb-2">Pause</button>
+                    <div class="text-muted">
+                        <span id="currentTime" class="small">0:00</span> / <span id="totalTime" class="small">0:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="christmasSong" autoplay loop>
+        <source src="It's the Most Wonderful Time of the Year (Acoustic).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
